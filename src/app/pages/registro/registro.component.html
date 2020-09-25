@@ -1,9 +1,9 @@
-<div class="limiter">
+<div class="limiter animated fadeInRight">
     <div class="container-login100">
         <div class="wrap-login100 p-t-50 p-b-90">
             <!-- le ponemos a este form el identificador f y declaramos que es de tipo ngForm-->
             <!-- además enviamos el identificador como parámetro en el método OnSubmit -->
-            <form (ngSubmit)="OnSubmit( f )" #f="ngForm" class="login100-form validate-form flex-sb flex-w">
+            <form (ngSubmit)="onSubmit( f )" #f="ngForm" class="login100-form validate-form flex-sb flex-w">
 
                 <span class="login100-form-title p-b-51">
                         Crear nueva cuenta
@@ -39,7 +39,7 @@
                     </div>
 
                     <div>
-                        <a routerLink="/registro" class="txt1">
+                        <a routerLink="/login" class="txt1">
                                 ¿Ya tienes cuenta? / Ingresar
                             </a>
                     </div>

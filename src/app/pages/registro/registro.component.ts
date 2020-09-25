@@ -9,7 +9,6 @@ import { UsuarioModel } from '../../models/usuario.model';
 })
 export class RegistroComponent implements OnInit {
 
-
   usuario: UsuarioModel;
 
   constructor() { }
@@ -18,14 +17,14 @@ export class RegistroComponent implements OnInit {
     this.usuario = new UsuarioModel();
   }
 
-OnSubmit( form: NgForm ) {
-
-  if ( form.invalid ) { return; }
-
-  console.log('Formulario enviado');
-  console.log(this.usuario);
-  console.log(form);
-}
+  onSubmit( form: NgForm ) {
+  
+    if ( form.invalid ) { return; }
+  
+    console.log('Formulario enviado');
+    console.log(this.usuario);
+    console.log(form);
+  }
 
 
 }
